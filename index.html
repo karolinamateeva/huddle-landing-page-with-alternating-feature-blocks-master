@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
+
+    <style>
+        body,
+        header,
+        footer,
+        main,
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body,
+        footer {
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400, 700;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            background-image: url("./images/bg-hero-desktop.svg");
+            background-color: hsl(193, 100%, 96%);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .header {
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .logo {
+            max-width: 150px;
+        }
+        
+        .heading {
+            margin-top: 50px;
+            font-size: 40px;
+            max-width: 60%;
+        }
+        
+        .text {
+            font-weight: 400;
+            max-width: 65%;
+        }
+        
+        .big-button {
+            max-width: 250px;
+            font-weight: bold;
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 40px;
+        }
+        
+        .small-button {
+            width: 150px;
+            height: 30px;
+            border: none;
+            border-radius: 40px;
+            font-weight: bold;
+        }
+        
+        .pink-button {
+            background-color: hsl(322, 100%, 66%);
+            box-shadow: 5px 5px 5px 5px hsl(193, 100%, 96%);
+            color: white;
+        }
+        
+        .white-button {
+            background-color: white;
+            box-shadow: 10px 10px 10px 10px hsl(193, 100%, 96%);
+        }
+        
+        .big-image {
+            max-width: 500px;
+        }
+        
+        .section {
+            max-width: 80%;
+            margin: 50px;
+            padding: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-style: groove;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px 5px rgb(228, 224, 224);
+        }
+        
+        .section-article {
+            display: flex;
+            flex-direction: column;
+            max-width: 50%;
+        }
+        
+        .section-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+        }
+        
+        .article-heading {
+            font-weight: 700;
+        }
+        
+        .article-text {
+            font-weight: 400;
+            font-size: 14px;
+        }
+        
+        .end-section {
+            max-width: 30%;
+            border-style: groove;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px 5px rgb(228, 224, 224);
+            margin: 50px;
+            padding: 50px;
+        }
+        
+        footer {
+            background-color: hsl(192, 100%, 9%);
+            color: white;
+            padding: 40px;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .footer-logo {
+            filter: grayscale(100%);
+            width: 200px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            max-width: 30%;
+            line-height: 1.0cm;
+            list-style: none;
+        }
+        
+        .footer-list {
+            margin-top: initial;
+            line-height: 1.0cm;
+            list-style: none;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="header">
+            <img class="logo" src="./images/logo.svg" alt="logo">
+            <h1 class="heading">Build The Community Your Fans Will Love </h1>
+            <p class="text">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+            <button class="big-button pink-button">Get Started For Free</button>
+        </div>
+        <div class="header">
+            <button class="small-button white-button">Try it free</button>
+            <img class="big-image" src="./images/illustration-mockups.svg" alt="illustration-mockups">
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section">
+            <article class="section-article">
+                <h2 class="article-heading">Grow Together</h2>
+                <p class="article-text">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+            </article>
+            <img class="section-image" src="./images/illustration-grow-together.svg" alt="illustration-grow-together">
+        </section>
+
+        <section class="section">
+            <img class="section-image" src="./images/illustration-flowing-conversation.svg" alt="illustration-flowing-conversation">
+            <article class="section-article">
+                <h2 class="article-heading">Flowing Conversations</h2>
+                <p class="article-text">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow. </p>
+            </article>
+        </section>
+
+        <section class="section">
+            <article class="section-article">
+                <h2 class="article-heading">Your Users</h2>
+                <p class="article-text">It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+            </article>
+            <img class="section-image" src="./images/illustration-your-users.svg" alt="image-your-users">
+        </section>
+
+        <section class="end-section">
+            <article>
+                <h2>Ready To Build Your Community? </h2>
+                <button class="big-button pink-button">Get Started For Free</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-logo" src="./images/logo.svg" alt="logo">
+        <div class="row">
+            <section class="footer-section">
+                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</li>
+                <li>+1-543-123-4567</li>
+                <li>@huddle.com</li>
+            </section>
+            <ul class="footer-list">
+                <li>About Us</li>
+                <li>What We Do</li>
+                <li>FAQ </li>
+                <li>Career </li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
